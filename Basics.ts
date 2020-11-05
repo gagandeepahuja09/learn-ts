@@ -45,4 +45,8 @@
         4. When to use this
     
     Types: Easy way to refer to the diffrent properties + functions that a value has.
+
+    Types ---> 
+        Primitive Types: number, boolean, undefined, string, void, null, symbol
+        Object Types(Any types that we create of are built into the language itself): functions, classes, arrays, objects
 */
