@@ -65,5 +65,22 @@
     So all the annotations that we wrote in the file variables.ts, was of no use.
     We can just delete it if we want, because inference will guess it just fine.
   #8 Undestanding Inference
-    T    
+    Type Inference
+        const color = 'red'
+    If declaration and initialization, are on the same line, then ts will figure out 
+    the type for us
+    This won't work otherwise
+        let apples
+        apples = 5
+    Now it will assign a type of any
+    So, question is when to use which?
+    Type Annotations: We(developers) tell TS the type
+        1. When we declare a variable on one line and then initialize it later
+        2. When we want to have the variable a type, that can't be inferred
+        3. When a function returns the 'any' type and we need to clarify the value
+    Type Inferences: TS guesses the type
+        1. Always
+  #9 The Any Type
+    * Means TS has no idea what this is - can't check for correct property references
+    * Avoid variables with 'any' at all costs
 */

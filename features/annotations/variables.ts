@@ -42,3 +42,17 @@ let point:
 const logNumber: (i: number) => void = (i: number) => {
   console.log(i)
 }
+
+// When to use annotations
+// 1) Function that returns the 'any' type
+const json = '{ x = "10", y = "20"}'
+// const coordinates = JSON.parse(json)
+// If we hover over coordinates, it will have a type of any
+// console.log(coordinates)
+// TS cannot predict the type of JSON.parse
+
+// coordinates.ferht ==> No such property exist for coordinates, but typescript won't 
+// be able to guess that, because it is of any type
+
+// Fix with annotations
+const coordinates: { x: number; y: number } = JSON.parse(json)
