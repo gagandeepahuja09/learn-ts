@@ -60,4 +60,5 @@
   * We'll discuss them for variables, functions and objects
 
   #5 Annotations With Variables
+  # Object Literal Annotations
 */
