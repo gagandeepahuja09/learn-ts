@@ -60,5 +60,10 @@
   * We'll discuss them for variables, functions and objects
 
   #5 Annotations With Variables
-  # Object Literal Annotations
+  #6 Object Literal Annotations
+  #7 Annotations Around Functions
+    So all the annotations that we wrote in the file variables.ts, was of no use.
+    We can just delete it if we want, because inference will guess it just fine.
+  #8 Undestanding Inference
+    T    
 */

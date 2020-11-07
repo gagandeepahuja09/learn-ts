@@ -25,10 +25,20 @@ class Car {
 let car: Car = new Car()
 
 // Object Literals
-let point: { x: number
-   y: number  } = {
-    //  x: 'a' Type string is not assignable to type number
-    x: 10,
-    y: 20
-    // a: 30 Type '{ x: number; y: number; a: number; }' is not assignable to type '{ x: number; y: number; }'.
-  }
+let point: 
+{ x: number
+  y: number  
+} = {
+  //  x: 'a' Type string is not assignable to type number
+  x: 10,
+  y: 20
+  // a: 30 Type '{ x: number; y: number; a: number; }' is not assignable to type '{ x: number; y: number; }'.
+}
+// Functions 
+// Ts suggests to use a type, if there isn't one
+// There is also, an any type, if we aren't sure on what type we will get
+// (i: number) => void
+// (List of all parenthesis that I expect) => What is expect to be returned
+const logNumber: (i: number) => void = (i: number) => {
+  console.log(i)
+}
