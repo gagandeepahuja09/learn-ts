@@ -44,9 +44,20 @@
         3. Examples
         4. When to use this
     
-    Types: Easy way to refer to the diffrent properties + functions that a value has.
+  #3 Types: Easy way to refer to the diffrent properties + functions that a value has.
 
     Types ---> 
         Primitive Types: number, boolean, undefined, string, void, null, symbol
         Object Types(Any types that we create of are built into the language itself): functions, classes, arrays, objects
+
+    Question: When to use Types?
+    Answer: Everywhere. Every value that we define, is going to have a type associated
+    with it
+
+  #4 Type Annotations And Inference
+  Type Annotations: Code we add to tell typescript what type of value a variable will refer to
+  Type Inference: Typescript tries to figure out what type of value a variable refers to   
+  * We'll discuss them for variables, functions and objects
+
+  #5 Annotations With Variables
 */
