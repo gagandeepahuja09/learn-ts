@@ -18,3 +18,20 @@ const subtract = (a: number, b: number): number => {
   // // Now we get an error as expected
   return a - b
 }
+
+function divide(a: number, b: number): number {
+  return a / b
+}
+
+const multiply = function multiply(a: number, b: number): number {
+  return a * b
+}
+
+const logger = (message: string): void => {
+  console.log(message)
+  // return undefined / null
+}
+
+const throwError = (message: string): never => {
+  throw new Error(message)
+}
