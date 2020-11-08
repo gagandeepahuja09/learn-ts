@@ -83,4 +83,7 @@
   #9 The Any Type
     * Means TS has no idea what this is - can't check for correct property references
     * Avoid variables with 'any' at all costs
+  #10 Delayed Initialization
+  #11 When Inference Doesn't Work
+  
 */

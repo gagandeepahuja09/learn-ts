@@ -56,3 +56,26 @@ const json = '{ x = "10", y = "20"}'
 
 // Fix with annotations
 const coordinates: { x: number; y: number } = JSON.parse(json)
+
+// 2) When we declare a variable on one line and then initialize it later
+let words = ['red', 'green', 'blue']
+let threeLengthWord: string
+
+for(let i = 0; i < words.length; i++) {
+  if(words[i].length === 3) {
+    threeLengthWord = words[i]
+  }
+}
+
+// 3) When we have a variable whose type cannot be inferred correctly
+let numbers = [ -10, 1, -12 ]
+let numberAboveZero: boolean | number = false
+
+// Another example: Let's say we have a variable usersFavMedia. This can have any
+// of the types like image, blogpost, etc
+
+for(let i = 0; i < numbers.length; i++) {
+  if(numbers[i] > 3) {
+    numberAboveZero = numbers[i]
+  }
+}
